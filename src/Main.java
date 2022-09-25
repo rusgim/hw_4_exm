@@ -69,5 +69,40 @@ public class Main {
         float weightSportsBreakfastKg = weightSportsBreakfast / 1000f;
         System.out.println(weightSportsBreakfast + " грамм");
         System.out.println(weightSportsBreakfastKg + " килограмм");
+        //задание 7
+        System.out.println(" ");
+        short totalWeight = 7000;
+        short weightLossPerDay1 = 250;
+        short weightLossPerDay2 = 500;
+        int numberOfDaysForWeightLoss1 = totalWeight / weightLossPerDay1;
+        int numberOfDaysForWeightLoss2 = totalWeight / weightLossPerDay2;
+        System.out.println("Если спортсмен будет терять каждый день по 250 грамм, то ему понадобится " + numberOfDaysForWeightLoss1 + " дней");
+        System.out.println("Если спортсмен будет терять каждый день по 500 грамм, то ему понадобится " + numberOfDaysForWeightLoss2 + " дней");
+        int averageNumberOfDaysToLoseWeight = (numberOfDaysForWeightLoss1 + numberOfDaysForWeightLoss2) / 2;
+        System.out.println(averageNumberOfDaysToLoseWeight + " может потребоваться дней в среднем, чтобы добиться результата похудения");
+        //задание 8
+        System.out.println(" ");
+        int salaryMaria = 67760;
+        int salaryDenis = 83690;
+        int salaryKristina = 76230;
+        int yearSalaryMaria = salaryMaria * 12;
+        int yearSalaryDenis = salaryDenis * 12;
+        int yearSalaryKristina = salaryKristina * 12;
+        int totalYearSalary = yearSalaryMaria + yearSalaryDenis + yearSalaryKristina;
+        float newSalaryMaria = salaryMaria * 0.1f + salaryMaria;
+        float newSalaryDenis = salaryDenis * 0.1f + salaryDenis;
+        float newSalaryKristina = salaryKristina * 0.1f + salaryKristina;
+        float newYearSalaryMaria = newSalaryMaria * 12;
+        float newYearSalaryDenis = newSalaryDenis * 12;
+        float newYearSalaryKristina = newSalaryKristina * 12;
+        float totalNewYearSalary = newYearSalaryMaria + newYearSalaryDenis + newYearSalaryKristina;
+        float differenceBetweenIncomes = totalNewYearSalary - totalYearSalary;
+        float differenceBetweenSalariesMaria = newYearSalaryMaria - yearSalaryMaria;
+        float differenceBetweenSalariesDenis = newYearSalaryDenis - yearSalaryDenis;
+        float differenceBetweenSalariesKristina = newYearSalaryKristina - yearSalaryKristina;
+        System.out.println("Маша теперь получает " + newSalaryMaria + " рублей. Годовой доход вырос на " + differenceBetweenSalariesMaria + " рублей");
+        System.out.println("Денис теперь получает " + newSalaryDenis + " рублей. Годовой доход вырос на " + differenceBetweenSalariesDenis + " рублей");
+        System.out.println("Кристина теперь получает " + newSalaryKristina + " рублей. Годовой доход вырос на " + differenceBetweenSalariesKristina + " рублей");
+        System.out.println("Разницу между годовым доходом с нынешней зарплатой и после повышения составляет " + differenceBetweenIncomes + " рублей");
     }
 }
